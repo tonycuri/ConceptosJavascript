@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo Javascript</title>
+</head>
+<body>
+    <h1>Introduccion a Javascript</h1>
+    <div id="mensaje"></div>
+
+    <script>
+        //las cadenas de texto siempre van entre comillas
+        let nombre;
+
+        nombre = "Juan";
+
+        console.log(nombre);
+
+        //concatenando variables
+        let aprendiendo =  'Aprendiendo',
+            tecnologia = 'Javascript';
+        
+        console.log(aprendiendo + ' ' + tecnologia);
+
+        //Funciones para Strings
+        let banda = "Metallica",
+            cancion = "Enter Sandman";
+        
+        let nombreCancion;
+
+        nombreCancion = banda + ": " + cancion;
+        console.log(nombreCancion);
+
+        //length nos dice cuantas letras tiene una variable
+        console.log(nombreCancion.length);
+
+        //concat
+        banda = banda.concat(" ", "es genial");
+        console.log(banda);
+
+        //todas mayusculas
+        banda = banda.toUpperCase();
+        console.log(banda);
+
+        //minisculas
+        banda = banda.toLowerCase();
+        console.log(banda);
+
+        //split va a dividir una cadena de texto
+        let actividad = 'Estoy aprendiendo Javascript';
+
+        actividad = actividad.split(' ');
+        console.log(actividad);
+
+        let intereses = 'Leer, caminar, escuchar musica, aprender a programar';
+
+        // intereses = intereses.split(',');
+        // console.log(intereses);
+
+        //replace : reemplaza un valor
+        // intereses = intereses.replace('Leer','Correr');
+        // console.log(intereses);
+
+        //includes revisa que algo exista
+        intereses = intereses.includes('Leer');
+        console.log(intereses);
+
+        //repetir cadena de texto
+        let master = 'Master ',
+            puppets = 'Of Puppets';
+        
+            console.log(master.repeat(3));
+            console.log(puppets);
+    // </script>
+</body>
+</html>
