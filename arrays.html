@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo Javascript</title>
+</head>
+<body>
+    <h1>Introduccion a Javascript</h1>
+    <div id="mensaje"></div>
+
+    <script>
+        //crear un arreglo
+        const numeros = [10,20,30,40,50];
+
+        console.log(numeros);
+        console.table(numeros);
+
+        const meses = new Array('enero', 'febrero', 'marzo');
+        console.log(meses);
+        console.log(meses[0]);
+        console.table(meses);
+
+        const arreglo = ['Hola',10, true, "si", null, undefined];
+        console.log(arreglo.length);
+        console.log(Array.isArray(arreglo));
+
+        //agregar un elemento al final del areglo
+        meses.push('Abril');
+        console.table(meses);
+
+        //agregar al principio
+        meses.unshift('Mes 0');
+        console.table(meses);
+
+        //eliminar del final
+        meses.pop();
+        console.table(meses);
+
+        //eliminar al inicio
+        meses.shift();
+        console.table(meses);
+
+        //elimnar un rango
+        meses.splice(0,1);
+        console.table(meses);
+
+        
+    </script>
+</body>
+</html>
