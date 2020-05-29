@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo Javascript</title>
+</head>
+<body>
+    <h1>Introduccion a Javascript</h1>
+    <div id="mensaje"></div>
+
+    <script>
+        let numero1 = 50,
+            numero2 = "10",
+            numero3 = "tres",
+            numero4 = "20.20";
+
+        // console.log(numero1 + numero2);
+        // console.log(numero1 - numero2);
+
+        console.log(Number(numero2) + numero1);
+
+        //parseInt solo convierte a enteros la cadena de texto
+        console.log(parseInt(numero4) + numero1);
+
+        //parseFloat convierte con decimales la cadena de texto
+        console.log(parseFloat(numero4) + numero1);
+
+        console.log(Number(numero3));
+
+        let dato;
+        dato = Number("20");
+        dato = Number("-20.20");
+        dato = Number(true);
+        dato = Number(false);
+        dato = Number(null);
+        dato = Number("Hola Mundo");
+
+        console.log(dato);
+
+        //tofixed
+        let numero5 = "10312032013210.31203210";
+        let numero6 = 213213721378921789.3219382190
+
+        console.log(Number(numero5).toFixed(4));
+        // console.log(numero5.toFixed());
+
+        
+    </script>
+</body>
+</html>
