@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo Javascript</title>
+</head>
+<body>
+    <h1>Introduccion a Javascript</h1>
+    <div id="mensaje"></div>
+
+    <script>
+        const persona = {
+            nombre: 'Tony',
+            edad: 32,
+            anioNaciomiento: function(){
+                return new Date().getFullYear() - this.edad;
+            }
+        }
+
+        console.log(persona);
+        console.log(persona.anioNaciomiento());
+
+        //Object Constructor
+        // function Tarea(nombre, urgencia){
+        //     this.nombre = nombre;
+        //     this.urgencia = urgencia;
+        // }
+
+        //clases
+        class Tarea{
+            constructor(nombre, urgencia){
+                this.nombre = nombre;
+                this.urgencia = urgencia;
+            }
+        }
+
+        //crear nuevas tareas
+
+        const tarea1 = new Tarea('Aprender Javascript', 'urgente');
+        const tarea2 = new Tarea('Comprar comida', 'urgente');
+        
+        console.log(tarea1);
+        console.log(tarea2);
+
+    </script>
+</body>
+</html>
