@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo Javascript</title>
+</head>
+<body>
+    <h1>Introduccion a Javascript</h1>
+    <div id="mensaje"></div>
+
+    <script>
+        //funciones en Javascript   
+        //funcion declaration
+        function saludar(nombre = 'visitante',trabajo = 'desconocido'){
+            console.log('Hola ' + nombre + ' tu trabajo es '+ trabajo);
+        }
+
+        saludar('Tony','Desarrollador web');
+        saludar();
+
+        //function expression
+        const suma = function(a = 0 , b = 0){
+            console.log( a + b);
+        }
+
+        suma();
+        suma(10,20);
+
+        //iife
+        (function(tecnologia){
+            console.log('Aqui estoy aprendiendo ' + tecnologia)
+        })('Javascript');
+    </script>
+</body>
+</html>
