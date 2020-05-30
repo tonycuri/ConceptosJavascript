@@ -51,6 +51,38 @@
         }
         musica.borrar(121);
 
+        //funciones que retornen valores
+        // const sumar = function(a=0, b = 0){
+        //     return a +b;
+        // }
+        //arrow function
+        const sumar = (a = 0 , b = 0) => a + b;
+
+        //arrow funtion
+        const multiplicar = (a) => a * 5;
+        
+        let total;
+        let resultadoSuma = sumar(10 +20);
+
+        total = multiplicar(resultadoSuma);
+
+        console.log(total);
+
+        //Arrow function
+        // let viajando = function(destino){
+        //     return 'viajando a la ciudad de ' + destino;
+        // }   
+        let viajando = destino => 'viajando a la ciudad de ' + destino; 
+        
+        let viaje; 
+        viaje = viajando('Londres');
+
+        console.log(viaje);
+
+        
+
+
+
     </script>
 </body>
 </html>
