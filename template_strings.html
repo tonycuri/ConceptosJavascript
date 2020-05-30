@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo Javascript</title>
+</head>
+<body>
+    <h1>Introduccion a Javascript</h1>
+    <div id="mensaje"></div>
+
+    <script>
+        //template strings
+        const   nombre ='Tony',
+                trabajo = 'Desarrollador web';
+        
+        console.log('Nombre: '+ nombre + ', Trabajo: ' + trabajo);
+
+        console.log(`Nombre: ${nombre}, Trabajo: ${trabajo}`);
+
+        const contenedorApp = document.querySelector('#mensaje');
+
+        let html = '<ul>'+
+                        '<li> Nombre ' + nombre + '</li>'+
+                        '<li> Trabajo ' + trabajo + '</li>'+
+                    '</ul>';
+        
+        // contenedorApp.innerHTML = html;
+
+        let html2 = `<ul>
+                        <li>Nombre: ${nombre}</li>
+                        <li>Trabajo: ${trabajo}</li>
+                    </ul>`
+                    
+                    contenedorApp.innerHTML = html2;            
+    </script>
+</body>
+</html>
