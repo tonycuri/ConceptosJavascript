@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo Javascript</title>
+</head>
+<body>
+    <h1>Introduccion a Javascript</h1>
+    <div id="mensaje"></div>
+
+    <script>
+        //fechas en javascript  
+        const diaHoy = new Date();
+
+        let valor = diaHoy;
+        //retoran el numero del mes 0 = enero
+        valor = diaHoy.getMonth();
+        //retorna el numero del dia 0 = domingo
+        valor = diaHoy.getDay();
+        //retorna el numero del dia del mes
+        valor = diaHoy.getDate();
+        //año actual
+        valor = diaHoy.getFullYear();
+        //minutos de la hora
+        valor = diaHoy.getMinutes();
+        //las horas del dia
+        valor = diaHoy.getHours();
+        //timestamp
+        valor = diaHoy.getTime();
+
+        valor = diaHoy.setFullYear(1988);
+        valor = diaHoy.getFullYear();
+
+        // console.log(valor);
+
+        //new date es igual a mes, dis y año
+        const unDia = new Date('8,14,1988');
+
+        valor = unDia.getDay();
+        console.log(valor);
+    </script>
+</body>
+</html>
