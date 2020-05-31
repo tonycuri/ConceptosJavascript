@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo Javascript</title>
+</head>
+<body>
+    <h1>Introduccion a Javascript</h1>
+    <div id="mensaje"></div>
+
+    <script>
+       const puntaje = 1000;
+       const edad = 20;
+
+       if(puntaje === '1000'){
+           console.log('Si es igual!');
+       }else{
+           console.log('No es igual');
+       }
+
+       if (edad > 18) {
+           console.log('Si eres mayor de edad');
+       }else{
+           console.log('No eres mayor de edad');
+       }
+
+       let dinero = 250;
+       let totalCarrito = 300;
+       let tarjeta = true;
+
+       if (dinero > totalCarrito) {
+           console.log('Pago Correcto');
+       } else if (tarjeta){
+           console.log('pagaste con tarjeta');
+       }else{
+           console.log('fondos insuficientes');
+       }
+
+    </script>
+</body>
+</html>
