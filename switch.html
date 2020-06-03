@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo Javascript</title>
+</head>
+<body>
+    <h1>Introduccion a Javascript</h1>
+    <div id="mensaje"></div>
+
+    <script>
+        //Switch statement
+        const metodoPago = 'efectivo';
+
+        switch(metodoPago){
+            case 'efectivo': 
+                console.log(`pagaste con ${metodoPago}`);
+                break;
+            case 'cheque': 
+                console.log(`pagaste con ${metodoPago} revisaremos que tenga fondos`);
+                break;   
+            case 'tarjeta': 
+                console.log(`pagaste con ${metodoPago} espere un momento`);
+                break; 
+            default:
+                console.log('Metodo no valido');
+                break;
+        }
+    </script>
+</body>
+</html>
