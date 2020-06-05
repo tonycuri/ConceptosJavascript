@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo Javascript</title>
+</head>
+<body>
+    <h1>Introduccion a Javascript</h1>
+    <div id="app"></div>
+
+    <script>
+        descargarUsuarios(30);
+
+        function descargarUsuarios(cantidad){
+            const api= `https://api.randomuser.me/?nat=US&results=${cantidad} `; 
+
+            //llamado a fetch
+            fetch(api)
+                .then(respuesta => respuesta.json())
+                .then(datos => imprimirHTML( datos.results));
+        }
+
+        function imprimirHTML(datos){
+            datos.forEach(usuario => {
+                console.log(usuario);
+
+                const li = document.createElement('li');
+
+                const {name:{first}, name:{last}, picture:{medium}, nat} = usuario;
+
+                li.innerHTML= `
+                    Nombre: ${first} ${last}
+                    País: ${nat}
+                    imagen: <img src="${medium}">
+                `;
+                document.querySelector('#app').appendChild(li);
+            });
+        }
+    </script>
+</body>
+</html>
