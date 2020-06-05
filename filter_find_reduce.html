@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo Javascript</title>
+</head>
+<body>
+    <h1>Introduccion a Javascript</h1>
+    <div id="mensaje"></div>
+
+    <script>
+        const personas =[
+            {nombre: 'Juan', edad: 28},
+            {nombre: 'Tony', edad: 31},
+            {nombre: 'Marcos', edad: 17},
+            {nombre: 'Gabriela', edad: 33, aprendiendo: 'a comer'},
+            {nombre: 'Miguel', edad: 60}
+        ];
+
+        console.table(personas);
+
+        //obtener personas mayores de 25 años
+        const mayores = personas.filter(persona => persona.edad > 25);
+        console.log(mayores);
+
+        //extraer un dato
+        const gabriela = personas.find( persona => persona.nombre === 'Gabriela');
+        let {aprendiendo} = gabriela;
+
+        console.log(gabriela);
+        console.log(aprendiendo);
+
+        //reduce
+        let total = personas.reduce((edadTotal, persona) =>{
+            return edadTotal + persona.edad;
+        },0);
+
+        console.log(total);
+    </script>
+</body>
+</html>
