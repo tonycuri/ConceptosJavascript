@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendiendo Javascript</title>
+</head>
+<body>
+    <h1>Introduccion a Javascript</h1>
+    <div id="mensaje"></div>
+
+    <script>
+        //destructuring
+        const cliente = {
+            nombre: 'Alejandra',
+            tipo: 'Premium',
+            datos:{
+                ubicacion:{
+                    ciudad: 'Buenos Aires',
+                    pais: 'Argentina'
+                },
+                cuenta: {
+                    desde: '10-12-2012',
+                    saldo: 8000
+                }
+            }
+        }
+        // console.log(cliente);
+
+        //crear la variable
+        //forma anterior
+        // const nombreCliente = cliente.nombre;
+
+        // console.log(nombreCliente);
+
+        //forma nueva
+        let {nombre,tipo} = cliente;
+        let {datos: {ubicacion:{ciudad}}} = cliente;
+
+        let {datos: {cuenta: {saldo}}} = cliente;
+
+        console.log(saldo);
+
+        console.log(ciudad);
+
+        console.log(nombre,tipo);
+    </script>
+</body>
+</html>
