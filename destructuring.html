@@ -34,7 +34,8 @@
         // console.log(nombreCliente);
 
         //forma nueva
-        let {nombre,tipo} = cliente;
+        let {nombre,tipo,datos} = cliente;
+
         let {datos: {ubicacion:{ciudad}}} = cliente;
 
         let {datos: {cuenta: {saldo}}} = cliente;
@@ -43,7 +44,7 @@
 
         console.log(ciudad);
 
-        console.log(nombre,tipo);
+        console.log(nombre,tipo,datos);
     </script>
 </body>
 </html>
